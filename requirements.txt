@@ -1,0 +1,14 @@
+fastapi~=0.115.11
+uvicorn
+sqlalchemy~=2.0.38
+asyncpg
+pydantic~=2.10.6
+alembic
+passlib[bcrypt]~=1.7.4
+python-jose[cryptography]
+pytest
+httpx
+flake8
+pip~=23.2.1
+cryptography~=44.0.2
+pytest-asyncio
