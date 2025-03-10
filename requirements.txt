@@ -11,3 +11,4 @@ httpx
 flake8
 pip~=23.2.1
 cryptography~=44.0.2
+pytest-asyncio
