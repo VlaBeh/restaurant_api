@@ -1,4 +1,5 @@
 from pydantic import BaseModel
+from datetime import date
 
 
 class UserLogin(BaseModel):
@@ -18,3 +19,17 @@ class RestaurantCreate(BaseModel):
 
 class RestaurantResponse(RestaurantCreate):
     id: int
+
+
+class MenuCreate(BaseModel):
+    day: date
+    restaurant_id: int
+
+
+class MenuResponse(BaseModel):
+    id: int
+    day: date
+    restaurant_id: int
+
+    class Config:
+        from_attributes = True
