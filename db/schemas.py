@@ -3,8 +3,8 @@ from datetime import date
 
 
 class UserLogin(BaseModel):
-    username: str
-    password: str
+    name: str
+    role: str
 
 
 class Token(BaseModel):
@@ -38,6 +38,7 @@ class MenuResponse(BaseModel):
 class EmployeeCreate(BaseModel):
     name: str
     role: str
+    password: str
 
 
 class EmployeeResponse(BaseModel):
